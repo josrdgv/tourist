@@ -1,0 +1,117 @@
+.nav-bar{
+    border-style: solid;
+    background-color: rgb(5, 5, 41);
+    /* padding-right: 82%; */
+}
+li{
+    list-style-type:none;
+    display: inline;
+    float: inline-start;
+    padding-top: 7px;
+    padding-left: 11px;
+    color:white;
+    font-size: 20px;
+}
+ul{
+        padding: left 24rem;;
+}
+.logo{
+    display: flex;
+    padding-left:6px;
+    color:white
+}
+.search-btn{
+    float: inline-end;
+    margin-top: -42px;
+    margin-right:12px;
+}
+input[type="text"]{
+    border-radius: 10px;
+}
+.button{
+    border-radius: 13px;
+    padding:4px;
+    padding-left:20px;
+    padding-right:17px;
+    background-color: rgb(60, 192, 60);
+}
+.main-part{
+    border-style:none;
+    text-align: center;
+    padding-top:7%;
+    padding-bottom: 9%;
+    color:white; 
+    background-color: rgb(58, 190, 58);
+}
+.head{
+    font-size: 38px;
+}
+.engage{
+    padding:2px;
+    padding-left:12px;
+    padding-right:14px;
+    border-radius:13px;
+    background-color: rgb(5, 5, 41) ;
+    color:white;
+    font-size:13px;
+
+}
+.content-part{
+    text-align: center;
+    color:grey;
+    margin-top: 26px;
+}
+#first{
+    font-size: 22px;
+    color:black;
+    font-weight: 600;
+}
+#snd{
+    font-size: 22px;
+    color:grey;
+    font-weight: 600;
+}
+.frame{
+    border-style:none;
+    background-color: grey;
+    padding: 102px;
+    margin-left:200px;
+    margin-right:935px
+}
+.frame2{
+    border-style:none;
+    background-color: grey;
+    padding:102px;
+    margin-left:550px;
+    margin-top: -224px;
+    margin-right:972px;
+}
+.frame3{
+    border-style:none;
+    background-color: grey;
+    padding:102px;
+    margin-left:297px;
+    margin-right:913px;
+    margin-top: -223px;
+}
+#frame{
+    display:flexbox;
+}
+#caption{
+    color: rgb(5, 5, 41);
+    font-size: 14px;
+    margin-left: 254px;
+    font-weight: 600;
+}
+#caption1{
+    color: rgb(5, 5, 41);
+    font-size: 14px;
+    margin-left: 595px;
+    font-weight: 600;
+}
+#caption2{
+    color: rgb(5, 5, 41);
+    font-size: 14px;
+    margin-left:326px;
+    font-weight: 600;
+}

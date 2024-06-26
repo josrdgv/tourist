@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assests/form1.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+
+         {% csrf_token %}
+        <div class="registration">
+
+
+        <label for="">Tourist Place:</label>
+        <input type="text" name="name" id="name" placeholder="Enter the username" required><br>
+        <label for="">Image:</label>
+        <input type="file" name="destination_img" id="password" placeholder="Enter the image" required><br>
+             <label for="">District:</label>
+        <input type="text" name="district" id="password" placeholder="Enter the district" required><br>
+             <label for="">State:</label>
+        <input type="text" name="state" id="password" placeholder="Enter the State" required><br>
+             <label for="">Map Link:</label>
+        <input type="text" name="map_link" id="password" placeholder="Enter the password" required><br>
+        <label for="">Weather:</label>
+        <input type="text" name="weather" id="password1" placeholder="Enter the current weather" required><br>
+             <label for="">Description:</label>
+        <input type="text" name="description" id="password1" placeholder="Enter the description" required><br>
+
+            <input type="submit"  value="submit" onclick="ShowAlert()" id="submit">
+        </div>
+    </form>
+<script src="{% static 'assests/js/script.js' %}"></script>
+</body>
+</html>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--{% load static %}-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Registration form</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="stylesheet" href="{% static 'assests/form.css' %}">-->
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <form action="" method="post">-->
+
+
+<!--        {% for msg in messages %}-->
+<!--        {{ msg }}-->
+<!--        {% endfor %}-->
+<!--         {% csrf_token %}-->
+<!--        <div class="registration">-->
+
+
+<!--        <label for="">Username:</label>-->
+<!--        <input type="text" name="username" id="name" placeholder="Enter the username" required><br>-->
+<!--        <label for="">First Name:</label>-->
+<!--        <input type="text" name="first_name" id="first" placeholder="Enter the first_name" required><br>-->
+<!--        <label for="">Last Name:</label>-->
+<!--        <input type="text" name="last_name" id="last" placeholder="Enter the last_name" required><br>-->
+<!--        <label for="">Email:</label>-->
+<!--        <input type="email" name="email" id="email" placeholder="Enter the email" required><br>-->
+<!--        <label for="">Password:</label>-->
+<!--        <input type="password" name="password" id="pass" placeholder="Enter the password" required><br>-->
+<!--        <label for="">Confirm Password:</label>-->
+<!--        <input type="password" name="cpassword" id="cpass" placeholder="Enter the password" required><br>-->
+
+<!--            <input type="submit"  value="submit" onclick="ShowAlert()">-->
+<!--        </div>-->
+<!--    </form>-->
+<!--<script src="{% static 'assests/js/script.js' %}"></script>-->
+<!--</body>-->
+<!--</html>-->
+<!--</body>-->
+<!--</html>-->

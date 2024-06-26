@@ -1,0 +1,65 @@
+.registration{
+    border: solid;
+    margin-left: 34%;
+    margin-right: 32%;
+    padding-top: 59px;
+    padding-left: 51px;
+    padding-right:20px;
+    padding-bottom: 41px;
+    margin-top: 7%;
+    margin-bottom: 9%;
+    border-radius: 13px;
+    box-shadow: 1px 0px 4px;
+    border-color:  rgb(36, 209, 36);
+}
+
+h2{
+margin-top:20px;
+  }
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+label{
+    padding-right: 74px;
+    text-align: center;
+    margin-left: 48px;
+
+}
+
+input{
+    padding-bottom: 0px;
+    margin-bottom: 15px;
+
+}
+#name{
+margin-left:-55px
+}
+#first{
+    margin-left:-55px
+}
+#last{
+    margin-left:-55px
+}
+
+#email{
+    margin-left:-27px
+}
+
+#pass{
+    margin-left:-53px
+}
+#password1{
+    margin-left:-53px
+
+}
+#submit{
+    background-color: rgb(36, 209, 36);
+    border-radius: 13%;
+    margin-left: 45%;
+    padding:9px;
+    border-color:  rgb(36, 209, 36);
+
+}

@@ -1,0 +1,69 @@
+img{
+    height: 180px;
+    width: 190px;
+    border-radius: 109px;
+}
+
+body{
+    background-color: rgb(192, 24, 24);
+}
+
+
+.workfolio{
+    border: none;
+    margin-left: 27%;
+    margin-right: 29%;
+    padding-left: 4%;
+    padding-bottom: 325px;
+    font-size: 18px;
+    background-color: rgb(114, 110, 110);
+    border-radius: 11px;
+    padding-top: 34px;
+    margin-top: 30px;
+
+}
+#name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+.detail{
+    margin-left: 268px;
+    margin-top: -120px;
+}
+h4{
+    border: solid;
+    border-radius: 10px;
+    margin-right: 68%;
+    margin-left: -4px;
+    padding: 2px;
+    padding-left: 14px;
+    margin-top: 54px;
+    
+    
+}
+
+
+button{
+    margin-left: 699px;
+    padding:10px;
+    background-color: rgb(253, 253, 23);
+    border-radius: 3px;
+    border-color:  rgb(253, 253, 23);
+    margin-top: 9px;
+    padding-left:20px ;
+    padding-right: 20px;
+}
+
+
+.exp{
+    margin-left: 64%;
+    margin-top: -49%;
+}
+#expe{
+
+    padding-left: 20px;
+    margin-right: 82px;
+}
+#project{
+    margin-right: 90px;
+}

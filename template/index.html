@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--    <link rel="stylesheet" href="{% static 'assests/admin.css' %}">-->
+    <title>Document</title>
+    <style>
+
+        .nav{
+
+        background-color: rgb(11, 11, 41);
+
+         margin-right: 82%;
+         padding-left: 14px;
+         margin-left: -8px;
+         margin-top: -8px;
+         padding-top: 33px; */
+         color: aliceblue;
+         font-family: 'Times New Roman', Times, serif;
+         font-size: 23px;
+         height: 100%;
+         width:20%;
+         position: fixed;
+         top:0;
+         left:0;
+         z-index: 1;
+         overflow-x:hidden;
+         padding-top: 20px;
+
+         }
+         ::-webkit-scrollbar {
+          width: 10px;
+         }
+
+  /* Track */
+
+
+      .logo{
+        padding-left: 16px;
+      }
+
+      li{
+      list-style-type: none;
+      color: aliceblue;
+      padding-bottom: 12px;
+
+
+     }
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 19px;
+
+}
+.glyphicon  {
+    top: 1px;
+    right:19px;
+
+}
+a:hover{
+background-color: rgb(54, 224, 54);
+text-decoration: none;
+
+}
+
+select{
+    background-color:  rgb(11, 11, 41) ;
+    color: antiquewhite;
+    border: none;
+
+}
+
+
+#table{
+    padding-left: 48px;
+
+}
+
+.dashboard{
+    margin-left: 50px;
+    margin-top: 42px;
+    font-size: 19px;
+}
+#Structures{
+    padding-left: 20px;
+}
+a:hover{
+    border-radius: 4px;
+padding: 10px;
+
+}
+ul{
+    padding-top: 60px;
+}
+
+
+.main{
+    margin-left: 350px;
+    display: flex;
+    padding: 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+#search{
+    border-radius: 8px;
+}
+.table-data{
+    margin-top: 62px;
+    margin-left:-92px;
+}
+.dash-nav{
+margin-left:20px;
+}
+.image{
+width:50px;
+height:20px;}
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        <label> Admin Panel</label>
+    </div>
+    <div class="dashboard"><span class="glyphicon glyphicon-home"></span>Dashboard</div>
+    <div class="side-navbar">
+        <ul>
+
+            <li><a href="">E-commerce
+                <select id="commerce">
+                    <option></option>
+                </select>
+            </a>
+            </li>
+            <li><a href="">Tables <select id="table">
+                <option></option>
+            </select></a>
+            </li>
+            <li><a href="">Structures <select id="Structures">
+                <option></option>
+            </select></a>
+            </li>
+            <li><a href="">Log out</a></li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="main">
+    <Label>Dashboard</Label>
+    <div class="container">
+        <a href="{% url 'create_place' %}" class="btn btn-primary">Create destinations</a>
+
+
+<!--        <div class="dash-nav">-->
+<!--            <form action='' method="GET">-->
+<!--                <input type="search" placeholder="Search Book or Author" id="search" name="q">-->
+<!--                <button type="submit"><i class="fa fa-search"></i></button>-->
+<!--            </form>-->
+            <div class="table-data">
+
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Place Name</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Weather</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Action</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for original_data in original_data %}
+                    <tr>
+                        <th scope="row">{{forloop.counter}}</th>
+                        <td>{{ original_data.name }}</td>
+                        <td>{{ original_data.district }},{{ original_data.state }}</td>
+                        <td>{{ original_data.weather }}</td>
+                        <td> {{ original_data.description }}</td>
+                         <td><a href="{% url 'place_detail' original_data.id %}" class="btn btn-primary">Details</a>
+
+                              <a href="update_details/{{original_data.id}}" class="btn btn-success">Update</a>
+                              <a href="{% url 'place_delete' original_data.id %}" class="btn btn-danger">Delete</a>
+                         </td>
+
+                    </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>
+
+
